@@ -8,7 +8,7 @@ namespace PhotoEnhancer
 {
     class GammaCorrectionParameters : IParameters
     {
-        public double GammaParameter { get; set; }
+        public double GammaParameterByUser { get; set; }
         public ParameterInfo[] GetDescription()
         {
             return new[]
@@ -25,7 +25,7 @@ namespace PhotoEnhancer
 
         public void SetValues(double[] values)
         {
-            GammaParameter = values[0];
+            GammaParameterByUser = values[0];
         }
     }
 }
